@@ -1,6 +1,6 @@
 @use "partial" as *;
 
-// Container
+/* Container */
 .container {
   width: 100%;
   max-width: $container-width;
@@ -11,4 +11,230 @@
 h1 {
   text-align: center;
   margin-bottom: 50px;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: $color-text-on-dark;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url(../img/bg4.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: $space-4 $space-2 $space-5;
+  max-width: $max-width;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.hero-name {
+  font-size: 4rem;
+  letter-spacing: 0.02em;
+  color: $color-text-on-dark;
+}
+
+.hero-tagline {
+  max-width: 32ch;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.85;
+  margin-bottom: $space-3;
+}
+
+/* Knapper */
+
+%btn-base {
+  display: block;
+  width: max-content;
+  margin: $space-3 auto 0;
+  font-family: $font-heading;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  padding: 0.65em 1.8em;
+  border-radius: $radius-pill;
+  border: 2px solid $color-accent;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
+
+  &:active {
+    transform: scale(0.97);
+  }
+}
+
+.btn {
+  @extend %btn-base;
+  background: $color-white;
+  color: $color-text;
+
+  &:hover,
+  &:focus-visible {
+    background: $color-lavender-deep;
+  }
+}
+
+.btn-dark {
+  @extend %btn-base;
+  background: transparent;
+  color: $color-text-on-dark;
+
+  &:hover,
+  &:focus-visible {
+    background: $color-accent;
+    color: $color-white;
+  }
+}
+
+/* Om mig */
+.about {
+  max-width: $max-width;
+  margin: 0 auto;
+  display: grid;
+  gap: $space-3;
+  text-align: start;
+  color: white;
+  background-color: $color-dark;
+  border-radius: $radius-md;
+
+  @include respond($bp-tablet) {
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    align-items: center;
+    gap: $space-4;
+  }
+}
+
+.about-text {
+  padding: 2rem;
+}
+
+.about-image img {
+  border-radius: $radius-md;
+  margin: 0 auto;
+}
+
+/* Kernekompetencer */
+.competence-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-3;
+  max-width: $max-width;
+  margin: 0 auto $space-4;
+
+  @include respond($bp-tablet) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: $space-4;
+  }
+}
+
+.competence-col {
+  position: relative;
+  min-height: 340px;
+  border-radius: $radius-md;
+  overflow: hidden;
+  background-image: url('img/lys-bg.webp');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+
+.competence-col-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.1) 65%);
+}
+
+.competence-col-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: $space-3;
+}
+
+.competence-col-title {
+  display: inline-block;
+  background: transparent;
+  color: $color-text;
+  padding: 0.3em 1em;
+  font-size: 3rem;
+  margin-bottom: $space-2;
+}
+
+.competence-col-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  li {
+    color: $color-white;
+    font-size: 0.95rem;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  }
+}
+
+.tool-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba($color-white, 0.7);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.tool-badge--plain {
+  background: $color-white;
+  padding: 0.6rem;
+  box-shadow: 0 4px 12px rgba($color-dark, 0.15);
+}
+
+.tools-block {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: $space-4 $space-2;
+  text-align: center;
+}
+
+.tools-heading {
+  color: $color-text-on-dark;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  opacity: 0.7;
+  margin-bottom: $space-3;
+}
+
+.tools-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.9rem;
 }
