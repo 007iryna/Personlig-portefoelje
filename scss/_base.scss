@@ -1,1 +1,24 @@
 @use "partial" as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  background-color: $color-bg;
+  font-family: $font-body;
+  line-height: 1.6;
+  color: $color-text;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
