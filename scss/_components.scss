@@ -136,7 +136,7 @@ h1 {
   gap: $space-3;
   max-width: $max-width;
   margin: 0 auto $space-4;
-  background-color: $color-dark;
+
   @include respond($bp-tablet) {
     grid-template-columns: repeat(3, 1fr);
     gap: $space-4;
@@ -211,7 +211,7 @@ h1 {
   }
 }
 
-.tool-badge--plain {
+.tool-badge-plain {
   background: $color-white;
   padding: 0.6rem;
   box-shadow: 0 4px 12px rgba($color-dark, 0.15);
@@ -222,6 +222,7 @@ h1 {
   margin: 0 auto;
   padding: $space-4 $space-2;
   text-align: center;
+  background-color: $color-dark;
 }
 
 .tools-heading {

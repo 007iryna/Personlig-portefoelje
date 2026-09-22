@@ -288,7 +288,6 @@ h1 {
   gap: 1.5rem;
   max-width: 1100px;
   margin: 0 auto 2.5rem;
-  background-color: #1a181b;
 }
 @media (min-width: 700px) {
   .competence-grid {
@@ -363,7 +362,7 @@ h1 {
      object-fit: contain;
 }
 
-.tool-badge--plain {
+.tool-badge-plain {
   background: #ffffff;
   padding: 0.6rem;
   box-shadow: 0 4px 12px rgba(26, 24, 27, 0.15);
@@ -374,6 +373,7 @@ h1 {
   margin: 0 auto;
   padding: 2.5rem 1rem;
   text-align: center;
+  background-color: #1a181b;
 }
 
 .tools-heading {
