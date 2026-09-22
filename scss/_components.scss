@@ -136,7 +136,7 @@ h1 {
   gap: $space-3;
   max-width: $max-width;
   margin: 0 auto $space-4;
-
+  background-color: $color-dark;
   @include respond($bp-tablet) {
     grid-template-columns: repeat(3, 1fr);
     gap: $space-4;
