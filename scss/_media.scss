@@ -2,9 +2,13 @@
 
 /* 1200px */
 @media (max-width: 1200px) {
+  .cases-nav-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-
-
+  .cases-nav-title {
+    font-size: 2rem;
+  }
 }
 
 /* 900px */
@@ -52,3 +56,80 @@
     font-size: 16px;
   }
 }
+
+.cases-nav-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cases-nav-title {
+    font-size: 2rem;
+  }
+
+  .section__heading {
+    font-size: 1.6rem;
+  }
+
+  .competence-col {
+    min-height: 220px;
+  }
+
+  .competence-col-title {
+    font-size: 1.6rem;
+  }
+
+  .tools-row {
+    gap: 0.6rem;
+  }
+
+  .tool-badge {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+
+
+/*  600px */
+@media (max-width: 600px) {
+  .btn-primary,
+  .btn-ghost {
+    max-width: 80%;
+  }
+
+  .site-header {
+    height: auto;
+    min-height: 100px;
+    padding: 1rem 0;
+  }
+
+  .header-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .container .header-inner {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .cases-nav-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cases-nav-title {
+    font-size: 2rem;
+  }
+
+  .section__heading {
+    font-size: 1.4rem;
+  }
+
+  .competence-col {
+    min-height: 180px;
+  }
+
+  .competence-col-list li {
+    font-size: 0.9rem;
+  }
+}
+
