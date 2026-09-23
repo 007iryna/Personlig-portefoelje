@@ -555,7 +555,7 @@ h1 {
   z-index: 1;
   color: #ffffff;
   font-family: "Alata", Georgia, serif, serif;
-  font-size: 4rem;
+  font-size: 3rem;
   letter-spacing: 0.02rem;
 }
 
@@ -638,7 +638,7 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
   }
   .cases-nav-title {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 }
 /* 900px */
@@ -680,36 +680,35 @@ h1 {
   p {
     font-size: 16px;
   }
+  .cases-nav-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cases-nav-title {
+    font-size: 2rem;
+  }
+  .section__heading {
+    font-size: 1.6rem;
+  }
+  .competence-col {
+    min-height: 220px;
+  }
+  .competence-col-title {
+    font-size: 1.6rem;
+  }
+  .tools-row {
+    gap: 0.6rem;
+  }
+  .tool-badge {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
 }
-.cases-nav-grid {
-  grid-template-columns: repeat(2, 1fr);
+/*  768px */
+@media (max-width: 768px) {
+  .cases-nav-title {
+    font-size: 2rem;
+  }
 }
-
-.cases-nav-title {
-  font-size: 2rem;
-}
-
-.section__heading {
-  font-size: 1.6rem;
-}
-
-.competence-col {
-  min-height: 220px;
-}
-
-.competence-col-title {
-  font-size: 1.6rem;
-}
-
-.tools-row {
-  gap: 0.6rem;
-}
-
-.tool-badge {
-  width: 2.6rem;
-  height: 2.6rem;
-}
-
 /*  600px */
 @media (max-width: 600px) {
   .btn-primary,
@@ -731,19 +730,31 @@ h1 {
     width: 100% !important;
     max-width: 100% !important;
   }
+  .about-text {
+    padding: 1rem;
+  }
   .cases-nav-grid {
     grid-template-columns: 1fr;
   }
   .cases-nav-title {
     font-size: 2rem;
   }
-  .section__heading {
-    font-size: 1.4rem;
+  #kernekompetencer .section__heading,
+  #kernekompetencer h1 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    padding: 0 1rem;
+    word-break: break-word;
   }
   .competence-col {
     min-height: 180px;
+    padding-left: 10px;
+    padding-right: 1rem;
   }
   .competence-col-list li {
     font-size: 0.9rem;
+  }
+  .contact-form {
+    margin: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
