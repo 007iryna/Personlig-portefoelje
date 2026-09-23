@@ -638,6 +638,78 @@ h1 {
   color: rgba(43, 36, 64, 0.6);
 }
 
+/* Case study (portfolio.html) */
+.case-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.case-split {
+  display: grid;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto 4rem;
+  padding: 0 1rem;
+}
+@media (min-width: 700px) {
+  .case-split {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: stretch;
+  }
+}
+
+.case-split-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+
+.case-split-text {
+  background: #e7d9f4;
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.case-meta-inline {
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 0.75;
+}
+
+.case-tools-inline {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* Flydende kontakt-knap  */
+.floating-contact {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 500;
+  display: inline-block;
+  padding: 0.65em 1.5em;
+  border-radius: 999px;
+  background: #9f38ff;
+  color: #ffffff;
+  font-family: "Alata", Georgia, serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(26, 24, 27, 0.35);
+  transition: transform 0.15s ease;
+}
+.floating-contact:hover, .floating-contact:focus-visible {
+  transform: scale(1.05);
+}
+
 /* 1200px */
 @media (max-width: 1200px) {
   .cases-nav-grid {
