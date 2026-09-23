@@ -169,13 +169,7 @@ h1 {
 .competence-col-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-  to bottom,
-  rgba(251, 251, 252, 0.85) 0%,
-  rgba(251, 251, 252, 0.4) 40%,
-  rgba(0, 0, 0, 0.1) 65%,
-  rgba(0, 0, 0, 0.55) 100%
-);
+  background-color: $color-lavender;
 }
 
 .competence-col-content {
@@ -190,7 +184,10 @@ h1 {
   background: transparent;
   color: $color-text;
   padding: 0.3em 1em;
-  font-size: 3rem;
+  font-size: 4rem;
+  font-weight: bold;
+  text-decoration: underline;
+
   margin-bottom: $space-2;
 }
 
@@ -203,9 +200,9 @@ h1 {
   gap: 0.5rem;
 
   li {
-    color: $color-white;
-    font-size: 0.95rem;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    color: $color-text;
+    font-size: 1.5rem;
+    
   }
 }
 
@@ -242,7 +239,7 @@ h1 {
 
 .tools-heading {
   color: $color-text-on-dark;
-  font-size: 1rem;
+  font-size: 2rem;
   letter-spacing: 0.08em;
   opacity: 0.7;
   margin-bottom: $space-3;
@@ -271,11 +268,6 @@ h1 {
     max-width: 100%;
     padding: 0 3rem;
   }
-}
-.cases-nav .h3{
-    display: flex;
-    align-self: center;
-    justify-content: center;
 }
 
 
@@ -323,7 +315,7 @@ h1 {
   z-index: 1;
   color: #ffffff;
   font-family: $font-primary, serif;
-  font-size: 1.5rem;
+  font-size: 4rem;
   letter-spacing: 0.02rem;
 
 }
