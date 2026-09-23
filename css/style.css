@@ -639,9 +639,6 @@ h1 {
   .cases-nav-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .cases-nav-title {
-    font-size: 2rem;
-  }
 }
 /* 900px */
 @media (max-width: 900px) {
@@ -685,9 +682,6 @@ h1 {
   .cases-nav-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .cases-nav-title {
-    font-size: 2rem;
-  }
   .section__heading {
     font-size: 1.6rem;
   }
@@ -700,12 +694,6 @@ h1 {
   .tool-badge {
     width: 2.6rem;
     height: 2.6rem;
-  }
-}
-/*  768px */
-@media (max-width: 768px) {
-  .cases-nav-title {
-    font-size: 2rem;
   }
 }
 /*  600px */
@@ -734,9 +722,6 @@ h1 {
   }
   .cases-nav-grid {
     grid-template-columns: 1fr;
-  }
-  .cases-nav-title {
-    font-size: 2rem;
   }
   .competence-col {
     min-height: 180px;
