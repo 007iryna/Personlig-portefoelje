@@ -423,7 +423,7 @@ h1 {
   position: relative;
   z-index: 1;
   width: 100%;
-  padding: 1.5rem;
+  padding: 1.5rem 1rem;
 }
 
 .competence-col-title {
@@ -445,7 +445,9 @@ h1 {
 }
 .competence-col-list li {
   color: #2b2440;
-  font-size: 1.5rem;
+  font-size: clamp(0.9rem, 2vw, 1.5rem);
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .tool-badge {
