@@ -42,7 +42,7 @@ h3 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: clamp(1.8rem, 6vw, 4rem);
 }
 
 h2 {
@@ -298,7 +298,7 @@ h1 {
 }
 
 .hero-name {
-  font-size: 4rem;
+  font-size: clamp(1.8rem, 6vw, 4rem);
   letter-spacing: 0.02em;
   color: #f4eefc;
 }
@@ -431,9 +431,7 @@ h1 {
   background: transparent;
   color: #2b2440;
   padding: 0.3em 1em;
-  font-size: 4rem;
-  font-weight: bold;
-  text-decoration: underline;
+  font-size: clamp(1.4rem, 4vw, 3rem);
   margin-bottom: 1rem;
 }
 
@@ -692,9 +690,6 @@ h1 {
   .competence-col {
     min-height: 220px;
   }
-  .competence-col-title {
-    font-size: 1.6rem;
-  }
   .tools-row {
     gap: 0.6rem;
   }
@@ -738,13 +733,6 @@ h1 {
   }
   .cases-nav-title {
     font-size: 2rem;
-  }
-  #kernekompetencer .section__heading,
-  #kernekompetencer h1 {
-    font-size: 1.6rem;
-    line-height: 1.2;
-    padding: 0 1rem;
-    word-break: break-word;
   }
   .competence-col {
     min-height: 180px;
