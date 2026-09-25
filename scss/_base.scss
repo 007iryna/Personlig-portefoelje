@@ -104,20 +104,20 @@ textarea:focus-visible {
   padding: $space-5 $space-2;
 }
 
-.section--light {
+.section-light {
   background: $color-bg;
 }
 
-.section--dark {
+.section-dark {
   background: $color-dark;
   color: $color-text-on-dark;
 }
 
-.section__heading {
+.section-heading {
   text-align: center;
   margin-bottom: $space-4;
 }
 
-.section__heading--on-dark {
+.section-heading-on-dark {
   color: $color-text-on-dark;
 }

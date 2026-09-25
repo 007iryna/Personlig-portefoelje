@@ -333,11 +333,15 @@ h1 {
 
 .contact-section{
  
-  background-image: url(../img/bg-light.webp);
+  background-image: url(../img/bg4.webp);
   background-size: cover;        
   background-position: center;   
   background-repeat: no-repeat;
    
+}
+
+.section-heading{
+  color: $color-lavender;
 }
 
 .section-intro {
@@ -345,6 +349,7 @@ h1 {
   margin: 0 auto $space-3;
   text-align: center;
   opacity: 0.85;
+  color: $color-white;
 }
 
 .contact-form {

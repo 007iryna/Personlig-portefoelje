@@ -59,9 +59,35 @@
 
   <main>
 
+      <!-- KONTAKT -->
+    <section class="contact-section" id="kontakt">
+      <h1 class="section-heading">Kontakt</h1>
+       <div class="section-intro">
+          <p>Har du et projekt i tankerne, eller vil du bare sige hej? </p>
+          <p> jeg glæder mig til at høre fra dig.</p>
+       </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <label class="visually-hidden" for="cf-name">Navn</label>
+        <input class="contact-form-field" type="text" id="cf-name" name="name" placeholder="Navn" required>
+
+        <label class="visually-hidden" for="cf-email">Email</label>
+        <input class="contact-form-field" type="email" id="cf-email" name="email" placeholder="Email" required>
+
+        <label class="visually-hidden" for="cf-message">Besked</label>
+        <textarea class="contact-form-field contact-form-field-textarea" id="cf-message" name="message" rows="5" placeholder="Besked" required></textarea>
+
+        <p class="contact-form-status" id="contactFormStatus" role="status" aria-live="polite"></p>
+
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </section>
 
 
-     </main>
+
+
+
+  </main>
 
    <!-- FOOTER -->
 <footer class="site-footer">
