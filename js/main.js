@@ -1,6 +1,7 @@
 import { Nav } from './Nav.js';
 import { ContactForm } from './ContactForm.js';
 import { CaseGrid } from './CaseGrid.js';
+import { CaseToggle } from './CaseToggle.js';
 
 
 

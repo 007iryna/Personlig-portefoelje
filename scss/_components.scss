@@ -459,9 +459,6 @@ h1 {
 }
 
 /* Case study (portfolio.html) */
-
-
-
 .case-card {
   display: grid;
   max-width: $max-width;
@@ -502,10 +499,6 @@ h1 {
 }
 
 
-/* "Se mere" — skjult sektion med procesbilleder */
-.case-details {
-  margin-top: $space-1;
-}
 
 
 
@@ -536,6 +529,64 @@ h1 {
     font-size: 1.1rem;
     margin-bottom: 0.4rem;
   }
+}
+
+/*Det kan jeg (portfolio.html*/
+
+.skills-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-3;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $space-2;
+
+  @include respond($bp-tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond($bp-desktop) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.skill-card {
+  background: $color-lavender;
+  border-radius: $radius-md;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba($color-dark, 0.12);
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.skill-card-body {
+  padding: $space-2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skill-card-body h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+.skill-intro {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.skill-detail {
+  margin-top: $space-1;
+  font-size: 0.9rem;
+  opacity: 0.9;
 }
 
 /* Flydende kontakt-knap  */
