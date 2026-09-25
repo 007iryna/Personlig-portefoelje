@@ -560,7 +560,7 @@ h1 {
   z-index: 1;
   color: #ffffff;
   font-family: "Alata", Georgia, serif, serif;
-  font-size: clamp(3rem, 3.2vw, 2.6rem);
+  font-size: clamp(1.3rem, 3.2vw, 2.6rem);
   letter-spacing: 0.02rem;
   overflow-wrap: break-word;
   hyphens: auto;
@@ -703,11 +703,6 @@ h1 {
 }
 
 /* Case study (portfolio.html) */
-.case-title {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
 .case-card {
   display: grid;
   max-width: 1100px;
@@ -754,23 +749,21 @@ h1 {
   margin-top: 0.5rem;
 }
 
-/* Fjerner browserens standard-pil og gør "summary" */
-.case-details summary {
-  list-style: none;
-}
-.case-details summary::-webkit-details-marker {
-  display: none;
-}
-
 .case-process {
   display: grid;
   gap: 1.5rem;
-  margin-top: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto 4rem;
+  padding: 0 1rem;
 }
 @media (min-width: 700px) {
   .case-process {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.case-process[hidden] {
+  display: none;
 }
 
 .case-process-item img {
