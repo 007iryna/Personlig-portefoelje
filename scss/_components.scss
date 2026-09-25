@@ -271,17 +271,20 @@ h1 {
   }
 }
 
+ 
+
 
 .cases-nav-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+
 }
 
 .cases-nav-item {
   position: relative;
   display: block;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   border-radius: $radius-md;
   text-decoration: none;
@@ -316,7 +319,7 @@ h1 {
   z-index: 1;
   color: #ffffff;
   font-family: $font-primary, serif;
-  font-size: clamp(1rem, 1.6vw, 1.6rem);   
+  font-size: clamp(3rem, 3.2vw, 2.6rem);
   letter-spacing: 0.02rem;
   overflow-wrap: break-word;               
   hyphens: auto;                            

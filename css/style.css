@@ -518,14 +518,14 @@ h1 {
 
 .cases-nav-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
 .cases-nav-item {
   position: relative;
   display: block;
-  aspect-ratio: 1/1;
+  aspect-ratio: 4/3;
   overflow: hidden;
   border-radius: 20px;
   text-decoration: none;
@@ -560,7 +560,7 @@ h1 {
   z-index: 1;
   color: #ffffff;
   font-family: "Alata", Georgia, serif, serif;
-  font-size: clamp(1rem, 1.6vw, 1.6rem);
+  font-size: clamp(3rem, 3.2vw, 2.6rem);
   letter-spacing: 0.02rem;
   overflow-wrap: break-word;
   hyphens: auto;
@@ -808,10 +808,15 @@ h1 {
 /* 1200px */
 @media (max-width: 1200px) {
   .cases-nav-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
   .cases-nav-title {
-    font-size: clamp(1.2rem, 3.2vw, 2.6rem);
+    font-size: clamp(3rem, 3.2vw, 2.6rem);
+  }
+  .cases-nav-item {
+    width: 70%;
+    max-width: 650px;
+    margin: 0 auto;
   }
 }
 /* 900px */
@@ -857,7 +862,15 @@ h1 {
     font-size: 1.5rem;
   }
   .cases-nav-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+  }
+  .cases-nav-title {
+    font-size: clamp(3rem, 4vw, 2.6rem);
+  }
+  .cases-nav-item {
+    width: 80%;
+    max-width: 650px;
+    margin: 0 auto;
   }
   .section__heading {
     font-size: 1.6rem;
@@ -902,6 +915,9 @@ h1 {
   }
   .cases-nav-grid {
     grid-template-columns: 1fr;
+  }
+  .cases-nav-item {
+    width: 100%;
   }
   .cases-nav-title {
     font-size: clamp(1.7rem, 6vw, 2.4rem);

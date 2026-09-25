@@ -2,12 +2,18 @@
 
 /* 1200px */
 @media (max-width: 1200px) {
-  .cases-nav-grid {
-    grid-template-columns: repeat(2, 1fr);
+    .cases-nav-grid {
+    grid-template-columns:  1fr;
   }
 
   .cases-nav-title{
-    font-size: clamp(1.2rem, 3.2vw, 2.6rem);
+    font-size: clamp(3rem, 3.2vw, 2.6rem);
+  }
+
+  .cases-nav-item {
+    width: 70%;
+    max-width: 650px;
+    margin: 0 auto;
   }
 
  
@@ -64,7 +70,17 @@
 
 
  .cases-nav-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:  1fr;
+  }
+
+  .cases-nav-title{
+    font-size: clamp(3rem, 4vw, 2.6rem);
+  }
+
+  .cases-nav-item {
+    width: 80%;
+    max-width: 650px;
+    margin: 0 auto;
   }
 
   
@@ -127,6 +143,11 @@
   .cases-nav-grid {
     grid-template-columns: 1fr;
   }
+   
+  .cases-nav-item{
+    width: 100%;
+  }
+
   .cases-nav-title{
     font-size: clamp(1.7rem, 6vw, 2.4rem);
   }

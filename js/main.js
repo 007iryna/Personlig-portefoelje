@@ -26,11 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'img/ii.webp',
       'portfolio.html#case-design'
     ),
-    new Project(
-      'Video & Motion',
-      'img/vid-img.webp',
-      'portfolio.html#case-video'
-    ),
+    
     new Project(
       'Branding & Identitet',
       'img/brand.webp',
