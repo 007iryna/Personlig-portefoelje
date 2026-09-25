@@ -26,7 +26,7 @@ h1 {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url(../img/bg4.webp);
+  background-image: url(../img/hero-bg.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -340,7 +340,7 @@ h1 {
    
 }
 
-.section__intro {
+.section-intro {
   max-width: 42ch;
   margin: 0 auto $space-3;
   text-align: center;
