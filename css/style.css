@@ -941,6 +941,32 @@ h1 {
   background-repeat: no-repeat;
 }
 
+/*Case-design, -branding html */
+.case-role {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.role-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  list-style: none;
+}
+
+.role-pill {
+  padding: 0.4em 1em;
+  border-radius: 999px;
+  border: 1px solid #9f38ff;
+  color: #2b2440;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
 /* 1200px */
 @media (max-width: 1200px) {
   .cases-nav-grid {

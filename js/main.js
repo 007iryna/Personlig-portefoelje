@@ -26,18 +26,18 @@ document.addEventListener('DOMContentLoaded', () => {
     new Project(
       'Interaktiv interface & Gamification',
       'img/ii.webp',
-      'portfolio.html#case-design'
+      'case-design.html'
     ),
     
     new Project(
       'Branding & Identitet',
       'img/brand.webp',
-      'portfolio.html#case-branding'
+      'case-branding.html'
     ),
     new Project(
       'Digital illustration & Visuelt indhold',
       'img/di.webp',
-      'portfolio.html#case-indhold'
+      'case-indhold'
     ),
   ];
 

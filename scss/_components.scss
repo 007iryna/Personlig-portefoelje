@@ -699,5 +699,31 @@ h1 {
    background-repeat: no-repeat;
 }
 
+/*Case-design, -branding html */
+.case-role {
+  padding-top: $space-3;
+  padding-bottom: $space-3;
+}
+
+.role-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $space-2;
+  list-style: none;
+}
+
+.role-pill {
+  padding: 0.4em 1em;
+  border-radius: $radius-pill;
+  border: 1px solid $color-accent;
+  color: $color-text;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
 
 
