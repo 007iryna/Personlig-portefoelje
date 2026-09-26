@@ -46,6 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
     new CaseGrid(casesGridEl, projects).init();
   }
 
+  const caseToggleButtons = document.querySelectorAll('.case-toggle-btn');
+ caseToggleButtons.forEach((button) => {
+  new CaseToggle(button).init();
+ });
+
   /* Footer */
   const yearEl = document.getElementById('year');
   if (yearEl) {
